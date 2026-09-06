@@ -1,0 +1,6 @@
+{
+  "name": "1Fi Marketplace",
+  "description": "Discover smartphones and electronics with flexible EMI plans backed by mutual funds.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
