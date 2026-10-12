@@ -1,952 +1,571 @@
-# 💳 1Fi Marketplace
+# 💳 1Fi Marketplace — Smart Shopping Meets Fintech
 
 <p align="center">
-  <img src="https://img.shields.io/badge/1Fi-Marketplace-111827?style=for-the-badge&logo=shopify&logoColor=white" />
-  <img src="https://img.shields.io/badge/FinTech-E--Commerce-7C3AED?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/Node.js-Express-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/Prisma-ORM-2D3748?style=for-the-badge&logo=prisma&logoColor=white" />
-  <img src="https://img.shields.io/badge/Vercel-Ready-000000?style=for-the-badge&logo=vercel&logoColor=white" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,30:172554,65:2563eb,100:06b6d4&height=260&section=header&text=1Fi%20Marketplace&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Shop%20Smart.%20Pay%20Flexibly.%20Manage%20Better.&descSize=17&descAlignY=58" width="100%" alt="1Fi Marketplace animated fintech banner"/>
 </p>
 
 <p align="center">
-  <strong>Next-Generation E-Commerce Powered by Mutual Fund-Backed Credit</strong>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=2800&pause=900&color=38BDF8&center=true&vCenter=true&width=750&lines=Modern+Fintech+%2B+E-Commerce;Mutual+Fund-Backed+Credit+Concept;Flexible+EMI+Shopping+Experience;Full-Stack+Marketplace+Application" alt="Animated project tagline"/>
 </p>
 
 <p align="center">
-  Shop premium products, unlock credit against eligible mutual fund holdings,
-  and manage flexible EMI repayments — without unnecessarily liquidating investments.
+  <img src="https://img.shields.io/badge/Project-Fintech%20%2B%20E--Commerce-2563eb?style=for-the-badge&logo=shopify&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Backend-Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Database-Prisma%20%7C%20SQLite-64748b?style=for-the-badge&logo=prisma&logoColor=white"/>
+</p>
+
+<p align="center">
+  <strong>A fintech marketplace concept that brings product discovery, flexible EMI shopping, and mutual-fund-backed credit concepts into one digital experience.</strong>
 </p>
 
 <p align="center">
   <a href="#-overview">Overview</a> •
-  <a href="#-key-features">Features</a> •
-  <a href="#-user-flow">User Flow</a> •
+  <a href="#-features">Features</a> •
   <a href="#-architecture">Architecture</a> •
-  <a href="#-tech-stack">Tech Stack</a> •
-  <a href="#-setup">Setup</a> •
-  <a href="#-deployment">Deployment</a>
+  <a href="#-installation">Installation</a> •
+  <a href="#-roadmap">Roadmap</a>
 </p>
 
 ---
 
-# 🚀 Project Overview
+## 🌌 Overview
 
-**1Fi Marketplace** is a full-stack **e-commerce + fintech platform** designed around a mutual-fund-backed credit experience.
+**1Fi Marketplace** is a full-stack marketplace concept that combines e-commerce with fintech-inspired payment flexibility.
 
-The platform combines:
+The application explores how customers could discover products, understand EMI options, manage a shopping experience, and view a credit-line dashboard connected conceptually to mutual-fund-backed lending.
 
-🛍️ **Modern E-Commerce**
+Instead of treating shopping and financing as separate experiences, the platform brings them together in one interface.
 
-💳 **Asset-Backed Credit**
+### ✨ The Core Idea
 
-📱 **Premium Product Catalog**
+<table>
+<tr>
+<td width="33%" align="center">
 
-📊 **EMI Management**
+### 🛍️ Shop
 
-🔐 **Authentication & KYC**
+Discover products through a modern marketplace interface.
 
-📈 **Financial Dashboard**
+</td>
+<td width="33%" align="center">
 
-☁️ **Cloud Deployment**
+### 💳 Finance
 
-The core concept is simple:
+Explore credit-line and EMI concepts within the shopping journey.
+
+</td>
+<td width="33%" align="center">
+
+### 📊 Manage
+
+Review account activity, loan information, and repayment details.
+
+</td>
+</tr>
+</table>
+
+> **Project scope:** This repository represents a software project/prototype. Financial integrations, actual credit approval, payment processing, and mutual fund lien operations should not be considered live unless independently implemented and verified.
+
+---
+
+## 🚀 Features
+
+### 🛍️ 1. Product Marketplace
+
+- Product catalog and browsing experience
+- Product details and pricing
+- Shopping-oriented interface
+- Integration points for a cart and checkout flow
+- Product discovery designed around a modern e-commerce experience
+
+### 💰 2. Flexible EMI Shopping
+
+- EMI-oriented product purchasing concept
+- Display of payment options
+- Financing information integrated into the shopping journey
+- Foundation for future installment and repayment workflows
+
+### 💳 3. Mutual-Fund-Backed Credit Concept
+
+The project explores a lending workflow inspired by credit lines secured against eligible mutual fund investments.
 
 ```text
-                 👤 USER
+                 CUSTOMER
                     │
                     ▼
-          ┌───────────────────┐
-          │   Verify Identity │
-          │   + Portfolio     │
-          └─────────┬─────────┘
+           Explore Marketplace
                     │
                     ▼
-          ┌───────────────────┐
-          │ Mutual Fund       │
-          │ Portfolio Value   │
-          └─────────┬─────────┘
+            Select a Product
                     │
                     ▼
-          ┌───────────────────┐
-          │ Credit Limit      │
-          │ Calculation       │
-          └─────────┬─────────┘
+           Explore Credit / EMI
                     │
                     ▼
-          ┌───────────────────┐
-          │ Browse Products   │
-          └─────────┬─────────┘
+         Review Financing Details
                     │
                     ▼
-          ┌───────────────────┐
-          │ Select EMI Plan   │
-          └─────────┬─────────┘
-                    │
-                    ▼
-          ┌───────────────────┐
-          │ Place Order       │
-          └─────────┬─────────┘
-                    │
-                    ▼
-          ┌───────────────────┐
-          │ Manage Repayment  │
-          └───────────────────┘
+           Continue Checkout Flow
 ```
 
----
+Actual eligibility checks, lien creation, lender integrations, and loan disbursement require real financial service integrations and applicable regulatory controls.
 
-# 💡 What Makes 1Fi Marketplace Different?
+### 🔐 4. Authentication and KYC Flow
 
-Traditional e-commerce generally separates shopping from financial services.
+- User account interface
+- Authentication workflow
+- KYC-oriented onboarding concept
+- Account-specific dashboard experience
 
-1Fi Marketplace combines both experiences into one application.
+### 📊 5. Customer Dashboard
 
-### 🛒 Shopping
+- Credit-line information
+- Loan and repayment overview
+- Account activity
+- Financing-related status information
 
-Users can browse:
+### 🧑‍💼 6. Administrative Capabilities
 
-- 📱 Smartphones
-- 💻 Electronics
-- 🏠 Appliances
-- 🎧 Lifestyle products
-- 📦 Multiple product variants
-
-### 💰 Financing
-
-Eligible users can access a credit facility based on their mutual fund portfolio value.
-
-### 📆 Repayment
-
-Users can select supported EMI tenures and manage their active repayment plans from a dedicated dashboard.
+Where implemented, administrative workflows can support product management, catalog maintenance, and marketplace operations.
 
 ---
 
-# ✨ Key Features
+## 🎬 Animated Project Showcase
 
-## 💳 Mutual Fund-Backed Credit Line
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,50:1d4ed8,100:06b6d4&height=100&section=header&text=One%20Marketplace.%20More%20Flexibility.&fontSize=27&fontColor=ffffff&animation=fadeIn" width="100%" alt="Fintech marketplace showcase banner"/>
+</p>
 
-The platform models a credit experience where eligible mutual fund holdings can be used as collateral through a digital lien concept.
+<table>
+<tr>
+<td width="50%" align="center">
 
-```text
-Mutual Fund Portfolio
-        │
-        ▼
-Portfolio Valuation
-        │
-        ▼
-Eligible Credit Limit
-        │
-        ▼
-Shopping Power
+### 🛒 Marketplace Experience
+
+Discover products and explore a shopping workflow.
+
+</td>
+<td width="50%" align="center">
+
+### 💳 Financing Experience
+
+Understand how financing options could fit into checkout.
+
+</td>
+</tr>
+<tr>
+<td width="50%" align="center">
+
+### 📈 Credit Dashboard
+
+Review credit-related information in one place.
+
+</td>
+<td width="50%" align="center">
+
+### 🔄 Repayment Workflow
+
+Explore repayment tracking and account management concepts.
+
+</td>
+</tr>
+</table>
+
+> Add real screenshots or a GIF of your application to turn this section into a visual product demo.
+
+---
+
+## 🏗️ Architecture
+
+```mermaid
+flowchart TD
+    U["👤 Customer"] --> FE["🖥️ React Frontend"]
+    FE --> AUTH["🔐 Authentication"]
+    FE --> API["⚡ Node.js / Express API"]
+    API --> PRODUCT["🛍️ Product Marketplace"]
+    API --> CREDIT["💳 Credit & EMI Workflows"]
+    API --> ACCOUNT["📊 Account Dashboard"]
+    PRODUCT --> DB[("🗄️ Database")]
+    CREDIT --> DB
+    ACCOUNT --> DB
+    DB --> ORM["Prisma ORM"]
+    ORM --> DB
 ```
 
-The application supports an approved credit limit model of **up to 50% of portfolio NAV**, based on the application's configured rules.
+### Architecture Layers
 
-> ⚠️ This project is a software demonstration. Actual lending, lien creation, KYC, and financial eligibility depend on real financial institutions, regulatory requirements, and production integrations.
-
----
-
-# 🛍️ Advanced Product Marketplace
-
-The marketplace provides a complete shopping experience.
-
-### Product Discovery
-
-Users can search and filter products using:
-
-- 🔎 Product name
-- 🏷️ Brand
-- 📂 Category
-- 💰 Price range
-- 📆 EMI tenure
-- 💳 Zero-interest eligibility
-
-### Product Variants
-
-Products can support multiple configurations such as:
-
-```text
-📱 Smartphone
-
-├── Color
-│   ├── Black
-│   ├── Blue
-│   └── Silver
-│
-├── Storage
-│   ├── 128 GB
-│   ├── 256 GB
-│   └── 512 GB
-│
-└── Availability
-    ├── In Stock
-    └── Out of Stock
-```
-
----
-
-# 📆 Flexible EMI Experience
-
-Supported example tenures include:
-
-| Tenure | EMI Option |
-|---:|---|
-| 3 Months | ✅ |
-| 6 Months | ✅ |
-| 9 Months | ✅ |
-| 12 Months | ✅ |
-| 18 Months | ✅ |
-| 24 Months | ✅ |
-
-The interface can present:
-
-```text
-Product Price
-      │
-      ▼
-Selected Tenure
-      │
-      ▼
-Monthly EMI
-      │
-      ▼
-Total Payable
-      │
-      ▼
-Cashback / Benefits
-```
-
-The goal is to make repayment information easy to understand before checkout.
-
----
-
-# 🔐 Authentication & Onboarding
-
-The platform includes multiple authentication and onboarding concepts.
-
-### Supported Flows
-
-- 👤 New user registration
-- 📧 Email sign-in
-- 🔢 OTP verification
-- 🪪 KYC-style onboarding
-- 💳 Portfolio verification flow
-- ⚡ Demo login
-
-### Demo Experience
-
-A pre-configured demo user can be used to explore the application without going through the complete onboarding process.
-
----
-
-# 📊 Financial Dashboard
-
-Users can view their financing information from a centralized dashboard.
-
-### Dashboard Information
-
-```text
-┌───────────────────────────────────────┐
-│          FINANCIAL OVERVIEW           │
-├───────────────────────────────────────┤
-│                                       │
-│  💳 Available Credit                  │
-│                                       │
-│  📈 Portfolio Value                   │
-│                                       │
-│  🏦 Active Loan                       │
-│                                       │
-│  📅 Next EMI Due                      │
-│                                       │
-│  📊 Remaining Installments            │
-│                                       │
-└───────────────────────────────────────┘
-```
-
-Users can also view information about pledged/linked fund holdings associated with active financing.
-
----
-
-# 💸 EMI Repayment
-
-The repayment interface is designed to support multiple payment methods.
-
-### Payment Options
-
-- 📱 UPI
-- 🏦 Net Banking
-- 💳 Debit Card Mandates
-
-Example flow:
-
-```text
-Active EMI
-    │
-    ▼
-View Due Amount
-    │
-    ▼
-Choose Payment Method
-    │
-    ├── UPI
-    ├── Net Banking
-    └── Debit Card
-    │
-    ▼
-Confirm Payment
-    │
-    ▼
-Repayment Updated
-```
-
----
-
-# 🧭 Complete User Journey
-
-```text
-                     START
-                       │
-                       ▼
-                 🏠 Marketplace
-                       │
-                       ▼
-                🔐 Authentication
-                       │
-                       ▼
-                🪪 KYC / Verification
-                       │
-                       ▼
-             💳 Credit Eligibility
-                       │
-                       ▼
-                🛍️ Browse Products
-                       │
-                       ▼
-                🔎 Product Details
-                       │
-                       ▼
-                🎨 Select Variant
-                       │
-                       ▼
-                 📆 Select EMI
-                       │
-                       ▼
-                  🛒 Checkout
-                       │
-                       ▼
-                 📦 Place Order
-                       │
-                       ▼
-              📊 Loan Dashboard
-                       │
-                       ▼
-                💰 EMI Repayment
-                       │
-                       ▼
-                     END
-```
-
----
-
-# 🏗️ System Architecture
-
-```text
-                         ┌─────────────────────┐
-                         │       USER          │
-                         │   Web Browser       │
-                         └──────────┬──────────┘
-                                    │
-                                    ▼
-                         ┌─────────────────────┐
-                         │   React Frontend    │
-                         │                     │
-                         │  • Marketplace      │
-                         │  • Products         │
-                         │  • Cart             │
-                         │  • EMI              │
-                         │  • Dashboard        │
-                         │  • Authentication   │
-                         └──────────┬──────────┘
-                                    │
-                              REST API
-                                    │
-                                    ▼
-                         ┌─────────────────────┐
-                         │  Express Backend    │
-                         │                     │
-                         │  • Auth             │
-                         │  • Products         │
-                         │  • Orders           │
-                         │  • EMI              │
-                         │  • Users            │
-                         │  • Portfolio        │
-                         └──────────┬──────────┘
-                                    │
-                                    ▼
-                         ┌─────────────────────┐
-                         │   Prisma ORM        │
-                         └──────────┬──────────┘
-                                    │
-                                    ▼
-                    ┌─────────────────────────────┐
-                    │       Database Layer         │
-                    │                              │
-                    │ SQLite Development           │
-                    │ PostgreSQL Production        │
-                    └─────────────────────────────┘
-```
-
----
-
-# 🧩 Application Architecture
-
-```text
-1Fi-Marketplace/
-│
-├── api/
-│   └── index.ts
-│
-├── prisma/
-│   ├── schema.prisma
-│   ├── seed.ts
-│   └── dev.db
-│
-├── src/
-│   ├── components/
-│   │   ├── Header/
-│   │   ├── ProductCard/
-│   │   ├── EmiPlanCard/
-│   │   ├── Cart/
-│   │   └── Dashboard/
-│   │
-│   ├── context/
-│   │   ├── AuthContext
-│   │   ├── CartContext
-│   │   └── FilterContext
-│   │
-│   ├── pages/
-│   │   ├── HomePage
-│   │   ├── ProductListingPage
-│   │   ├── ProductDetailPage
-│   │   └── Dashboard
-│   │
-│   ├── lib/
-│   │   └── utilities
-│   │
-│   ├── App.tsx
-│   └── main.tsx
-│
-├── lib/
-│   └── Prisma utilities
-│
-├── serverApp.ts
-├── server.ts
-├── vercel.json
-├── .env.example
-├── .gitignore
-└── package.json
-```
-
----
-
-# 🗄️ Database Design
-
-The application uses **Prisma ORM** for database access.
-
-Core entities include:
-
-```text
-                 ┌──────────────┐
-                 │     User     │
-                 └──────┬───────┘
-                        │
-             ┌──────────┴──────────┐
-             ▼                     ▼
-       ┌─────────────┐       ┌─────────────┐
-       │    Order    │       │   Portfolio │
-       └──────┬──────┘       └─────────────┘
-              │
-              ▼
-       ┌─────────────┐
-       │ EMI / Loan  │
-       └─────────────┘
-
-       ┌─────────────┐
-       │   Product   │
-       └──────┬──────┘
-              │
-              ▼
-       ┌─────────────┐
-       │   Variant   │
-       └──────┬──────┘
-              │
-              ▼
-       ┌─────────────┐
-       │   EMI Plan  │
-       └─────────────┘
-```
-
-### Main Models
-
-- 👤 User
-- 🛍️ Product
-- 🎨 ProductVariant
-- 📆 EmiPlan
-- 📦 Order
-
----
-
-# 🛠️ Tech Stack
-
-## Frontend
-
-| Technology | Purpose |
+| Layer | Responsibility |
 |---|---|
-| ⚛️ React 19 | UI development |
-| 📘 TypeScript | Type-safe development |
-| ⚡ Vite | Development and build tooling |
-| 🎨 Tailwind CSS v4 | Styling |
-| ✨ Motion | UI animations |
-| 🧩 Lucide Icons | Interface icons |
-| 🧭 Wouter | Lightweight routing |
+| Frontend | Marketplace UI, forms, dashboard, and user interactions |
+| API | Request handling and application business logic |
+| Authentication | User identity and protected access |
+| Marketplace | Product catalog and shopping workflows |
+| Fintech workflows | Credit and EMI-related application concepts |
+| ORM | Structured database access through Prisma |
+| Database | Persistent application data |
 
-## Backend
-
-| Technology | Purpose |
-|---|---|
-| 🟢 Node.js | Runtime |
-| 🚀 Express.js | REST API |
-| 🔷 Prisma | ORM |
-| 🗄️ SQLite | Local development database |
-| 🐘 PostgreSQL | Production database option |
-
-## Deployment
-
-| Platform | Usage |
-|---|---|
-| ▲ Vercel | Production deployment |
-| 🐳 Docker | Container compatibility |
-| ☁️ Cloud Run | Deployment option |
+The diagram describes the intended application organization; exact service boundaries depend on the implementation in the repository.
 
 ---
 
-# 🎨 UI / UX Highlights
+## 🔄 Application Workflow
 
-The application focuses on a modern fintech-commerce experience.
-
-### Visual Design
-
-- ✨ Modern fintech interface
-- 🧊 Card-based layouts
-- 📱 Responsive design
-- 🎞️ Smooth motion effects
-- 🧩 Reusable components
-- 🌓 Modern visual hierarchy
-- 📊 Financial dashboard cards
-- 🛍️ Product-focused shopping interface
-
-### UX Principles
-
-```text
-Simple Navigation
-       ↓
-Fast Product Discovery
-       ↓
-Clear Financing Information
-       ↓
-Transparent EMI Selection
-       ↓
-Simple Checkout
-       ↓
-Easy Repayment Management
+```mermaid
+flowchart LR
+    A["Open Marketplace"] --> B["Browse Products"]
+    B --> C["Select Product"]
+    C --> D["Review Price & EMI"]
+    D --> E["Authentication / KYC"]
+    E --> F["Review Available Options"]
+    F --> G["Checkout Workflow"]
+    G --> H["Account Dashboard"]
 ```
 
 ---
 
-# 🔒 Security Considerations
+## 🧰 Technology Stack
 
-The project includes development-oriented security practices such as:
+### Frontend
 
-- 🔐 Environment variable configuration
-- 🚫 `.env` files excluded from Git
-- 🔑 Secret/API key separation
-- 🧩 Server-side API architecture
-- 🗄️ ORM-based database access
-- 📦 Dependency-based application structure
+<p>
+  <img src="https://skillicons.dev/icons?i=react,js,ts,html,css,vite,tailwind&perline=7" alt="Frontend technology icons"/>
+</p>
 
-Example `.gitignore` protection:
+- React
+- JavaScript / TypeScript, depending on the configured frontend
+- Responsive component-based UI
+- Marketplace and dashboard components
 
-```gitignore
-.env
-.env.*
-.env.local
-!.env.example
+### Backend
 
-node_modules/
-dist/
-```
+<p>
+  <img src="https://skillicons.dev/icons?i=nodejs,express&perline=5" alt="Backend technology icons"/>
+</p>
 
-> For a production financial application, additional controls such as real KYC providers, secure session management, encryption, audit logging, payment-provider integrations, regulatory compliance, and production-grade infrastructure would be required.
+- Node.js
+- Express.js
+- REST API architecture
+- Authentication and business logic
+
+### Database and ORM
+
+<p>
+  <img src="https://skillicons.dev/icons?i=prisma,sqlite,postgres&perline=5" alt="Database technology icons"/>
+</p>
+
+- Prisma ORM
+- SQLite for local development, where configured
+- PostgreSQL as a potential production database option
+
+### Development Tools
+
+<p>
+  <img src="https://skillicons.dev/icons?i=git,github,vscode,docker,vercel&perline=5" alt="Development tool icons"/>
+</p>
+
+- Git and GitHub
+- Visual Studio Code
+- Vercel
+- Docker, if configured for the deployment workflow
 
 ---
 
-# 🚀 Local Development
+## 🗃️ Database Design
 
-## Prerequisites
+The database should reflect the entities actually implemented in the project.
 
-Install:
+A typical marketplace and financing model may include:
 
-- Node.js **18+**
-- npm
+| Entity | Purpose |
+|---|---|
+| User | Account and profile information |
+| Product | Marketplace catalog |
+| Order | Customer purchases |
+| CreditLine | Credit-related account information |
+| Loan | Financing record |
+| Repayment | Installment and repayment history |
+| KYCRecord | Verification workflow status |
+
+These are conceptual entities, not a guarantee that every model exists in the current Prisma schema. Refer to the actual schema for the authoritative database design.
+
+---
+
+## 🔌 API Design
+
+The backend can expose REST endpoints for the following functional areas, depending on the routes implemented in the repository.
+
+| Functional Area | Typical Operations |
+|---|---|
+| Authentication | Register, login, profile |
+| Products | List, view, create, update |
+| Cart and Orders | Manage cart, create and view orders |
+| Credit | View credit-line information |
+| EMI and Loans | Review financing and loan details |
+| Repayments | View repayment history and status |
+| Administration | Manage products and authorized operations |
+
+### Example Request
+
+```http
+GET /api/products
+Accept: application/json
+```
+
+### Example Response
+
+```json
+{
+  "success": true,
+  "data": [
+    {
+      "id": "product-example",
+      "name": "Example Product",
+      "price": 24999
+    }
+  ]
+}
+```
+
+This is an illustrative API example. Use the actual route names and response formats from your backend implementation.
+
+---
+
+## 🔐 Security Considerations
+
+Financial applications require security beyond a polished UI.
+
+Recommended safeguards include:
+
+- Secure authentication and password hashing
+- Server-side authorization for protected endpoints
+- Input validation and safe error handling
+- Environment variables for credentials and secrets
+- Rate limiting and abuse prevention
+- Secure cookie configuration when cookie-based authentication is used
+- Protection against unauthorized account and order access
+- Audit logging for sensitive financial actions
+- No real financial or KYC data in public demo environments
+
+**Never commit API keys, database passwords, JWT secrets, or production credentials to GitHub.**
+
+---
+
+## 💻 Installation
+
+### Prerequisites
+
+- Node.js and npm
 - Git
-- VS Code
+- A configured database supported by the project's Prisma schema
 
----
-
-## 1️⃣ Clone
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/1Fi-Marketplace.git
-
-cd 1Fi-Marketplace
+git clone YOUR_EXISTING_REPOSITORY_URL
+cd YOUR_PROJECT_DIRECTORY
 ```
 
----
+Replace the placeholders with your existing repository URL and folder name.
 
-## 2️⃣ Install Dependencies
+### 2. Install Dependencies
+
+If the project has a single package:
 
 ```bash
 npm install
 ```
 
----
-
-## 3️⃣ Configure Environment
-
-### Windows PowerShell
-
-```powershell
-Copy-Item .env.example .env
-```
-
-### macOS / Linux
+If frontend and backend use separate packages, install dependencies in each directory:
 
 ```bash
-cp .env.example .env
+cd backend
+npm install
 ```
 
-Example development configuration:
+```bash
+cd ../frontend
+npm install
+```
+
+Use the actual directory names in your repository.
+
+### 3. Configure Environment Variables
+
+Create the appropriate `.env` file using your project's environment example.
+
+Typical variables may include:
 
 ```env
-DATABASE_URL="file:./prisma/dev.db"
-NEXT_PUBLIC_APP_URL="http://localhost:3000"
-GEMINI_API_KEY=""
+DATABASE_URL="your_database_connection_string"
+JWT_SECRET="replace_with_a_secure_random_secret"
+PORT=5000
 ```
 
----
+These are illustrative variable names. Match the exact names expected by your application code and Prisma configuration.
 
-# 🗄️ Initialize Prisma
+### 4. Configure Prisma
 
-Generate the Prisma client:
+If the repository uses Prisma migrations, run the commands appropriate for its configured Prisma version and schema:
 
 ```bash
 npx prisma generate
+npx prisma migrate dev
 ```
 
-Create/update the local database:
+If your project uses `prisma db push` during development, follow its existing setup instructions instead of applying migrations blindly.
 
-```bash
-npx prisma db push
-```
+### 5. Start the Application
 
-Seed the catalog:
-
-```bash
-npm run seed
-```
-
----
-
-# ▶️ Run the Application
+Use the scripts defined in the relevant `package.json` files:
 
 ```bash
 npm run dev
 ```
 
-Open:
+For a separate frontend and backend, start each using its own configured development script.
+
+---
+
+## 🧪 Testing and Quality
+
+Recommended checks for a marketplace application include:
+
+- Authentication and authorization tests
+- Product catalog validation
+- Cart and order calculations
+- EMI calculation validation
+- API error handling
+- Database persistence
+- Responsive frontend behavior
+- Protected-route access
+- Environment configuration checks
+
+Use the test framework and commands already configured in your repository.
+
+---
+
+## ☁️ Deployment
+
+A possible deployment arrangement is:
+
+```mermaid
+flowchart TD
+    USER["🌐 User"] --> FRONT["Frontend Hosting"]
+    FRONT --> API["Backend Hosting"]
+    API --> DB[("Managed Database")]
+    API --> EXT["External Financial APIs, if implemented"]
+```
+
+### Deployment Checklist
+
+- Configure frontend and backend environment variables.
+- Use HTTPS in production.
+- Configure CORS for trusted origins.
+- Use a production database where appropriate.
+- Apply the correct Prisma schema/migrations.
+- Store secrets in the hosting provider's secret manager.
+- Test authentication and protected endpoints after deployment.
+- Do not represent simulated financing flows as live financial services.
+
+---
+
+## 📸 Screenshots
+
+Create a `screenshots/` directory in your repository and add real screenshots of the running application.
 
 ```text
-http://localhost:3000
+screenshots/
+├── homepage.png
+├── marketplace.png
+├── product-details.png
+├── login.png
+├── dashboard.png
+└── repayment.png
 ```
 
----
-
-# 📜 Available Scripts
-
-| Command | Description |
-|---|---|
-| `npm run dev` | Start full-stack development server |
-| `npm run build` | Generate Prisma client and build application |
-| `npm run vercel-build` | Production Vercel build |
-| `npm run start` | Start compiled production server |
-| `npm run seed` | Seed products and EMI plans |
-| `npm run lint` | Run TypeScript checks |
-| `npm run clean` | Remove build artifacts |
-
----
-
-# ☁️ Vercel Deployment
-
-The application is designed to work with Vercel using:
-
-```text
-GitHub
-   │
-   ▼
-Vercel
-   │
-   ├── React / Vite Frontend
-   │
-   └── Serverless API
-             │
-             ▼
-        Production DB
-```
-
-### Deployment Steps
-
-1. Push the project to GitHub.
-2. Open Vercel.
-3. Import the repository.
-4. Configure environment variables.
-5. Use the production database URL.
-6. Deploy.
-
-Production environment variables may include:
-
-```env
-DATABASE_URL="your-production-database-url"
-GEMINI_API_KEY="your-api-key-if-used"
-```
-
----
-
-# 🧪 Development Workflow
-
-```text
-        Developer
-            │
-            ▼
-      VS Code / Git
-            │
-            ▼
-     React + Express
-            │
-            ▼
-         Prisma
-            │
-            ▼
-       Development DB
-            │
-            ▼
-      Build & Testing
-            │
-            ▼
-         GitHub
-            │
-            ▼
-         Vercel
-            │
-            ▼
-       🚀 Production
-```
-
----
-
-# 📸 Screenshots
-
-Add your application screenshots here to make the repository more visually engaging.
-
-### 🏠 Marketplace
-
-```text
-![Marketplace](./screenshots/home.png)
-```
-
-### 🛍️ Product Details
-
-```text
-![Product Details](./screenshots/product-details.png)
-```
-
-### 💳 Credit Dashboard
-
-```text
-![Credit Dashboard](./screenshots/dashboard.png)
-```
-
-### 📆 EMI Selection
-
-```text
-![EMI Plans](./screenshots/emi-plans.png)
-```
-
-### 📦 Orders
-
-```text
-![Orders](./screenshots/orders.png)
-```
-
-> Recommended: create a `screenshots/` folder and add 4–6 high-quality images from the application.
-
----
-
-# 🔮 Future Roadmap
-
-## 💳 Financial Integrations
-
-- [ ] Real CAMS integration
-- [ ] Real KFintech integration
-- [ ] Production-grade lien workflows
-- [ ] Real-time portfolio valuation
-- [ ] Credit eligibility engine
-
-## 💰 Payments
-
-- [ ] Razorpay integration
-- [ ] UPI AutoPay
-- [ ] Payment webhooks
-- [ ] Automated EMI reconciliation
-- [ ] Payment history
-
-## 🔐 Identity
-
-- [ ] Production KYC provider
-- [ ] Aadhaar/PAN verification where legally appropriate
-- [ ] Secure OTP provider
-- [ ] Identity verification workflow
-
-## 🛍️ Marketplace
-
-- [ ] Wishlist
-- [ ] Product reviews
-- [ ] Seller management
-- [ ] Inventory management
-- [ ] Order tracking
-- [ ] Coupon engine
-- [ ] Recommendation system
-
-## 📊 Analytics
-
-- [ ] User analytics
-- [ ] Product performance
-- [ ] EMI repayment analytics
-- [ ] Credit utilization dashboard
-- [ ] Admin analytics
-
----
-
-# 🏆 Project Highlights
-
-| Capability | Status |
-|---|:---:|
-| 🛍️ Product Marketplace | ✅ |
-| 🔎 Product Search | ✅ |
-| 🏷️ Product Filtering | ✅ |
-| 🎨 Product Variants | ✅ |
-| 💳 Credit Line Concept | ✅ |
-| 📆 EMI Plans | ✅ |
-| 📊 Financial Dashboard | ✅ |
-| 🔐 Authentication | ✅ |
-| 🔢 OTP Flow | ✅ |
-| 📦 Order Management | ✅ |
-| 💰 Repayment UI | ✅ |
-| 🗄️ Prisma ORM | ✅ |
-| ⚡ React + Vite | ✅ |
-| 🟢 Express API | ✅ |
-| ▲ Vercel Ready | ✅ |
-| 🐳 Docker Compatible | ✅ |
-
----
-
-# 🎯 Engineering Highlights
-
-This project demonstrates practical experience with:
-
-- ⚛️ Modern React architecture
-- 📘 TypeScript
-- 🟢 Express REST APIs
-- 🔷 Prisma ORM
-- 🗄️ Relational database modeling
-- 🔐 Authentication flows
-- 🛒 E-commerce architecture
-- 💳 Fintech product concepts
-- 📆 EMI calculation and presentation
-- 📦 Order workflows
-- 🎨 Responsive UI development
-- ✨ Animation-driven UX
-- ☁️ Serverless deployment
-- 🔧 Environment configuration
-- 📦 Database seeding
-
----
-
-# ⚠️ Disclaimer
-
-**1Fi Marketplace is a software project / demonstration and is not a financial service provider.**
-
-The mutual-fund-backed credit, KYC, lien, EMI, and repayment functionality represented in the application is intended to demonstrate product and engineering concepts.
-
-Production deployment of such functionality would require appropriate:
-
-- Regulatory compliance
-- Financial institution partnerships
-- KYC/AML processes
-- Secure financial integrations
-- Payment infrastructure
-- Data protection controls
-- Legal and compliance review
-
----
-
-# 👨‍💻 Developed By
-
-## Dhanush Gopi Kavala
-
-**Software Engineer | Full-Stack Developer | AI/ML Enthusiast**
-
-I build modern web applications combining practical backend systems, responsive frontend experiences, databases, APIs, and cloud deployment.
+Display them in the README:
 
 <p align="center">
+  <strong>🏠 Marketplace Homepage</strong>
+</p>
 
-<a href="https://github.com/dhanushgopi2456">
-<img src="https://img.shields.io/badge/GitHub-Dhanush%20Gopi-181717?style=for-the-badge&logo=github&logoColor=white" />
-</a>
+<p align="center">
+  <img src="./screenshots/homepage.png" width="90%" alt="1Fi Marketplace homepage screenshot"/>
+</p>
 
-<a href="https://www.linkedin.com/in/dhanush-gopi-kavala-a460a528b/">
-<img src="https://img.shields.io/badge/LinkedIn-Dhanush%20Gopi-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
+<p align="center">
+  <strong>🛍️ Product Marketplace</strong>
+</p>
 
+<p align="center">
+  <img src="./screenshots/marketplace.png" width="90%" alt="1Fi Marketplace product catalog screenshot"/>
+</p>
+
+<p align="center">
+  <strong>📊 Customer Dashboard</strong>
+</p>
+
+<p align="center">
+  <img src="./screenshots/dashboard.png" width="90%" alt="1Fi Marketplace dashboard screenshot"/>
+</p>
+
+Replace these image paths with screenshots you actually add. Otherwise, GitHub will display broken image placeholders.
+
+---
+
+## 🛣️ Roadmap
+
+- [ ] Improve product discovery and filtering
+- [ ] Enhance mobile shopping experience
+- [ ] Expand order and cart management
+- [ ] Add validated EMI calculation workflows
+- [ ] Improve dashboard analytics
+- [ ] Add comprehensive backend tests
+- [ ] Strengthen authentication and authorization
+- [ ] Improve accessibility
+- [ ] Add structured logging and monitoring
+- [ ] Integrate external financial services where eligible and supported
+- [ ] Document production deployment and database migrations
+
+---
+
+## 🧠 What This Project Demonstrates
+
+- Full-stack application development
+- E-commerce workflow design
+- REST API development
+- Database modeling and ORM usage
+- Authentication and account management
+- Fintech product workflow design
+- Frontend/backend integration
+- Environment-based configuration
+- Deployment planning and security awareness
+
+---
+
+## 👨‍💻 Developer
+
+**Dhanush Gopi Kavala**
+
+Full-Stack Developer | Software Engineering Graduate
+
+<p align="center">
+  <a href="https://github.com/dhanushgopi2456">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+  <a href="https://www.linkedin.com/in/dhanush-gopi-kavala-a460a528b/">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
 </p>
 
 ---
 
-# 📜 License
-
-This project is available under the **MIT License**.
-
----
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:06b6d4,40:2563eb,75:172554,100:020617&height=150&section=footer&animation=fadeIn" width="100%" alt="1Fi Marketplace animated footer"/>
+</p>
 
 <p align="center">
-
-## 💳 Shop Smarter. Finance Smarter. Build Better.
-
-### 🚀 1Fi Marketplace
-
-**Modern E-Commerce × FinTech × Asset-Backed Credit**
-
-⭐ If you found this project interesting, consider starring the repository!
-
+  <strong>💳 1Fi Marketplace</strong><br/>
+  <em>Bringing shopping and flexible financing concepts together.</em>
 </p>
