@@ -491,7 +491,7 @@ Display them in the README:
 </p>
 
 <p align="center">
-  <img src="./screenshots/homepage.png" width="90%" alt="1Fi Marketplace homepage screenshot"/>
+  <img src="" width="90%" alt="1Fi Marketplace homepage screenshot"/>
 </p>
 
 <p align="center">
@@ -503,11 +503,11 @@ Display them in the README:
 </p>
 
 <p align="center">
-  <strong>📊 Customer Dashboard</strong>
+  <strong>📊Dashboard Page</strong>
 </p>
 
 <p align="center">
-  <img src="./screenshots/dashboard.png" width="90%" alt="1Fi Marketplace dashboard screenshot"/>
+  <img src="https://github.com/dhanushgopi2456/My-All-Project-Screenshots/blob/main/1Fi%20Dashboard%20page.png" width="90%" alt="1Fi Marketplace dashboard screenshot"/>
 </p>
 
 Replace these image paths with screenshots you actually add. Otherwise, GitHub will display broken image placeholders.
