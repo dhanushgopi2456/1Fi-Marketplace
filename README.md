@@ -510,7 +510,6 @@ Display them in the README:
   <img src="https://github.com/dhanushgopi2456/My-All-Project-Screenshots/blob/main/1Fi%20Dashboard%20page.png" width="90%" alt="1Fi Marketplace dashboard screenshot"/>
 </p>
 
-Replace these image paths with screenshots you actually add. Otherwise, GitHub will display broken image placeholders.
 
 ---
 
