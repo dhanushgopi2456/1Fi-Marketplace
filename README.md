@@ -491,15 +491,15 @@ Display them in the README:
 </p>
 
 <p align="center">
-  <img src="" width="90%" alt="1Fi Marketplace homepage screenshot"/>
+  <img src="https://github.com/dhanushgopi2456/My-All-Project-Screenshots/blob/main/1Fi%20Home%20Page.png" width="90%" alt="1Fi Marketplace homepage screenshot"/>
 </p>
 
 <p align="center">
-  <strong>🛍️ Product Marketplace</strong>
+  <strong>🛍️ Product EMI Page </strong>
 </p>
 
 <p align="center">
-  <img src="./screenshots/marketplace.png" width="90%" alt="1Fi Marketplace product catalog screenshot"/>
+  <img src="https://github.com/dhanushgopi2456/My-All-Project-Screenshots/blob/main/1Fi%20EMI%20Page.png" width="90%" alt="1Fi Marketplace product catalog screenshot"/>
 </p>
 
 <p align="center">
