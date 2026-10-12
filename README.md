@@ -472,19 +472,6 @@ flowchart TD
 
 ## 📸 Screenshots
 
-Create a `screenshots/` directory in your repository and add real screenshots of the running application.
-
-```text
-screenshots/
-├── homepage.png
-├── marketplace.png
-├── product-details.png
-├── login.png
-├── dashboard.png
-└── repayment.png
-```
-
-Display them in the README:
 
 <p align="center">
   <strong>🏠 Marketplace Homepage</strong>
