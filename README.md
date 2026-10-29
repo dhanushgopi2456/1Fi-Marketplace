@@ -530,11 +530,7 @@ flowchart TD
 
 ---
 
-## 👨‍💻 Developer
-
-**Dhanush Gopi Kavala**
-
-Full-Stack Developer | Software Engineering Graduate
+## 👨‍💻 
 
 <p align="center">
   <a href="https://github.com/dhanushgopi2456">
